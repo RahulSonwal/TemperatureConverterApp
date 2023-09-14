@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+}
+
+.travl__add {
+    width: 50%;
+    padding: 4rem;
+}
+
+.travl__add video {
+    width: 100%;
+}
+
+.container h1 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.conversion__box {
+    background-color: #ADE6CF;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.conversion__box label {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.conversion__box input {
+    font-size: 1.6rem;
+    width: 100%;
+    padding: 1.2rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+#convertBtn,
+#resetBtn {
+    font-size: 1.6rem;
+    padding: 1.2rem;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+#convertBtn {
+    background-color: #006A33;
+    width: 49.5%;
+}
+
+#resetBtn {
+    background-color: #B00000;
+    width: 49.5%;
+}
+
+.error__msg {
+    display: none;
+    color: #ff0404;
+}
+
+.a__link {
+    font-size: 1.6rem;
+    margin-top: 4rem;
+}
+
+/* MEDIA */
+
+@media (max-width: 48em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 39em) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media (max-width: 32em) {
+    body {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .travl__add {
+        width: 100%;
+    }
+}
